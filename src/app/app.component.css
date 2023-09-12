@@ -1,0 +1,18 @@
+.main{
+    background-color:#9abbb0;
+    height: 644px;
+    width: 90rem;
+   
+}
+.title-section{
+    margin: auto;
+    text-align: center;
+}
+.city-section{
+    font-size: 30px;
+    font-family: 'Courier New';
+    color: #eb0b57;
+}
+.nav{
+    background-color: #eb0b57;
+}
