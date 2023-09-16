@@ -18,11 +18,29 @@ export class AppComponent { //class to write code here
  name='pooja';
  no1 = 10;
  no2= 200;
- data ="aarav";
+ data1 ="aarav";
  cars :any[] =['audi',"swift",'bmw'];
  car =this.cars[1];
  student ={name:'pooja',age :20};
+genderM ='male';
+genderF='female';
 
+painting ='Painting';
+dancing= 'Dancing';
+singing = 'Singing';
+
+hobbie(event : any){
+  console.log(event.target.value);
+  
+}
+
+
+
+gen(data:any){
+  console.log('data',data.target.value);
+  // target.avlue is a key
+  
+}
 
 
 

@@ -22,9 +22,18 @@
 
 <p>{{no2 === 20}}</p>  <!-- it will return true or false-->
 
-name : <input type="text" [value]= "data">
+name : <input type="text" [value]= "data1">
 carName :<input type="text" [value]= "car">
 student age :<input type="text" [value]= "student.age">
+<p>Gender</p>
+
+male : <input type="radio" [value]="genderM" name ="gender"  (change)="gen($event)"> 
+female : <input type="radio" [value]="genderF" name ="gender" (change)="gen($event)">
+<br><br>
+Hobbies:
+Painting : <input type="checkbox" [value]="painting" (change)="hobbie($event)">
+Dancing : <input type="checkbox" [value]="dancing" (change)="hobbie($event)">
+Singing : <input type="checkbox"  [value]="singing" (change)="hobbie($event)">
 
 </div>
 
