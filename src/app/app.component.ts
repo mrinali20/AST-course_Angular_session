@@ -28,17 +28,32 @@ genderF='female';
 painting ='Painting';
 dancing= 'Dancing';
 singing = 'Singing';
+userHobbies :string[]=[];
+favCountry= 'india';
+studentName :any = 'aarav';
 
 hobbie(event : any){
+  console.log(event.target.value);
+  this.userHobbies.push(event.target.value);
+  console.log(this.userHobbies);
+  console.log(this.favCountry);
+  
+  this.favCountry='london';
+  console.log(this.favCountry);
+  
+  
+}
+submit(event:any){
   console.log(event.target.value);
   
 }
 
 
 
+
 gen(data:any){
   console.log('data',data.target.value);
-  // target.avlue is a key
+  // target.value is a key
   
 }
 
@@ -64,6 +79,21 @@ learningInterpolation(){
   
 }
 // property blinding : [] define
+
+// what is this keyword use: in js this keyword is getting inside object to point in object
+// ts : this keyword is used to pint global prorties it is also used in function  to fetch value
+
+addition(){
+  let num1 =20;
+  let num2=50;
+  var res =num1+num2;
+  console.log(res);
+  
+}
+
+
+
+
 
 
 

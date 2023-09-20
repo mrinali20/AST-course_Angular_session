@@ -21,10 +21,11 @@
 <!-- <p>{{}}</p> Parser Error: Blank expressions are not allowed in interpolated strings -->
 
 <p>{{no2 === 20}}</p>  <!-- it will return true or false-->
-
+<!-- property binding [] -->
 name : <input type="text" [value]= "data1">
 carName :<input type="text" [value]= "car">
 student age :<input type="text" [value]= "student.age">
+
 <p>Gender</p>
 
 male : <input type="radio" [value]="genderM" name ="gender"  (change)="gen($event)"> 
@@ -35,5 +36,22 @@ Painting : <input type="checkbox" [value]="painting" (change)="hobbie($event)">
 Dancing : <input type="checkbox" [value]="dancing" (change)="hobbie($event)">
 Singing : <input type="checkbox"  [value]="singing" (change)="hobbie($event)">
 
+<!-- event binding : it is used to handle the event raised from the dom like button click,mouse move etc.when dom event happen  -->
+<br>
+
+<button (click)='submit' >
+  submit
+</button><br><br>
+
+<!-- two way data binding : The two-way binding has a feature to update data from component to view and vice-versa.change is reflected in both components. Whenever you make changes in the Model, it will be reflected in the View and when you make changes in View, it will be reflected in Model.
+In two way data binding, property binding and event binding are combined together. -->
+
+student Name<input type="text"[(ngModel)]='studentName'> 
+<p>{{studentName}}</p>
+
+<button (click="addition")>addition</button>
+
 </div>
+
+
 
