@@ -30,7 +30,16 @@ dancing= 'Dancing';
 singing = 'Singing';
 userHobbies :string[]=[];
 favCountry= 'india';
-studentName :any = 'aarav';
+
+num1 : number =50;
+num2 : number =20;
+addNumber1 : any;
+addNumber2 : any; 
+addResult? :number;
+studentName :string = 'aarav';
+
+
+
 
 hobbie(event : any){
   console.log(event.target.value);
@@ -47,6 +56,15 @@ submit(event:any){
   console.log(event.target.value);
   
 }
+// addition(){
+//   let num1 =20;
+//   let num2=50;
+//   var res =num1+num2;
+//   console.log(res);
+  
+  
+// }
+
 
 
 
@@ -83,14 +101,10 @@ learningInterpolation(){
 // what is this keyword use: in js this keyword is getting inside object to point in object
 // ts : this keyword is used to pint global prorties it is also used in function  to fetch value
 
-addition(){
-  let num1 =20;
-  let num2=50;
-  var res =num1+num2;
-  console.log(res);
-  
-}
 
+additionNumber(){
+  this.addResult = this.addNumber1 + this.addNumber2 ;
+}
 
 
 

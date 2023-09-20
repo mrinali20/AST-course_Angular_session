@@ -8,7 +8,8 @@
  
   <p>{{name}}</p>
 
-<p>{{no1 + no2}}</p>    <!-- can we pass arithmatic expression in string interpolation:yes -->
+<p>{{no1 + no2}}</p>    
+<!-- can we pass arithmatic expression in string interpolation:yes -->
 <p>{{500 ++ 40}}</p>
 <p>{{500+20 + 'pooja' + 40 + 20}}</p>
 <!-- <p>{{typeof(no1)}}</p> In interpolation type of operator will through error -->
@@ -46,12 +47,23 @@ Singing : <input type="checkbox"  [value]="singing" (change)="hobbie($event)">
 <!-- two way data binding : The two-way binding has a feature to update data from component to view and vice-versa.change is reflected in both components. Whenever you make changes in the Model, it will be reflected in the View and when you make changes in View, it will be reflected in Model.
 In two way data binding, property binding and event binding are combined together. -->
 
-student Name<input type="text"[(ngModel)]='studentName'> 
+student Name<input type="text" [(ngModel)]="studentName"> 
 <p>{{studentName}}</p>
 
-<button (click="addition")>addition</button>
+
+<br>
+no1<input type="number" [(ngModel)]="addNumber1" >
+no2<input type="number" [(ngModel)]="addNumber2" > 
+<button (click)="additionNumber()">
+    clickme
+</button><br>
+addResult
+<input type="number" [(ngModel)]="addResult" >
 
 </div>
+
+<!-- <button (click)="addition">addition</button> -->
+
 
 
 
