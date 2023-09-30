@@ -1,15 +1,21 @@
 import { Component } from '@angular/core'; //impot section
+import { RouterModule,Routes } from '@angular/router';
+import { LandingComponent } from './landing/landing.component';
 
-@Component({  //component directive/decorator
+import { Router } from '@angular/router';
+
+
+@Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  templateUrl:'./app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent { //class to write code here
   title = 'My first Application';
 //let/var/const city = 'pune';
 //any Data type: city:any 
 //property binding :
+
  city? : string ; //declaration of property
 
  city2 : string = 'pune'; //declration + def of proprty
@@ -37,6 +43,11 @@ addNumber1 : any;
 addNumber2 : any; 
 addResult? :number;
 studentName :string = 'aarav';
+
+constructor(private router: Router )
+ { }
+
+
 
 
 
@@ -77,7 +88,7 @@ gen(data:any){
 
 
 
-  constructor(){}    //to inject dependancies
+  // constructor(){}    //to inject dependancies
   
 //life cycle hooks 
 
@@ -102,13 +113,28 @@ learningInterpolation(){
 // ts : this keyword is used to pint global prorties it is also used in function  to fetch value
 
 
-additionNumber(){
-  this.addResult = this.addNumber1 + this.addNumber2 ;
+// additionNumber(){
+//   this.addResult = this.addNumber1 + this.addNumber2 ;
+// }
+
+
+
+// addCircle() {
+//   const newCircle = {
+//     id: this.nextCircleId,
+//     isSelected: false,
+//     //backgroundColor: this.nextCircleId % 2 === 0 ? 'blue' : 'red'
+//     backgroundColor:'blue'
+//   };
+//   this.circles.push(newCircle);
+//   this.nextCircleId++;
+// }
+
+
+landing(){
+  this.router.navigateByUrl('landing')
 }
-
-
-
-
+    
 
 
 }
