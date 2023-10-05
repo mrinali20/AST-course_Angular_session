@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 // import { AddCircleComponent } from './add-circle/add-circle.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TestComponent } from './test/test.component';
+// import { StudentComponent } from './student/student.component';
+
 
 
 const routes: Routes = [
@@ -14,6 +16,10 @@ const routes: Routes = [
   // { path : 'addCircle', component : AddCircleComponent}
 {path : 'landing' , component: LandingComponent},
 {path : 'test' , component: TestComponent},
+
+{path :  'student',  
+loadChildren: () => import('./student/student.module').then(m => m.StudentModule)  },
+
 {path : "**", component : PagenotfoundComponent}
    ];
 

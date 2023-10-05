@@ -22,6 +22,11 @@ constructor(private router : Router){
   test(){
     this.router.navigateByUrl('test');
  }
+
+ student(){
+  this.router.navigateByUrl('student/studentLanding');
+
+ }
 }
 
     

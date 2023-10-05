@@ -8,7 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TestComponent } from './test/test.component'
+
+
+
+
 // import { AddCircleComponent } from './add-circle/add-circle.component';
+console.log("appmodule");
 
 @NgModule({
   declarations: [
